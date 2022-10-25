@@ -7,17 +7,17 @@ class account {
     }
     deposit(money) {
         this.balanceInit = this.balanceInit + money;
-        console.log(`${this.name} ${this.surname}, hai depositato ${money}, Il tuo saldo attuale è ${this.balanceInit}`);
+        console.log(`${this.name} ${this.surname}, hai depositato ${money} euro, Il tuo saldo attuale è ${this.balanceInit} euro`);
     }
     withdraw(money) {
         this.balanceInit = this.balanceInit - money;
-        console.log(`${this.name} ${this.surname}, hai prelevato ${money}, Il tuo saldo attuale è ${this.balanceInit}`);
+        console.log(`${this.name} ${this.surname}, hai prelevato ${money} euro, Il tuo saldo attuale è ${this.balanceInit} euro`);
     }
 }
 class motherAccount extends account {
     interest() {
         this.balanceInit = Math.floor(this.balanceInit * 1.1);
-        console.log(`${this.name} ${this.name}, con gli interessi, Il tuo saldo attuale è ${this.balanceInit}`);
+        console.log(`${this.name} ${this.name}, con gli interessi, Il tuo saldo attuale è ${this.balanceInit} euro`);
     }
 }
 class sonAccount extends account {
